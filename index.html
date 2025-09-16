@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Bảo hiểm Thông Minh | So sánh & mua bảo hiểm đa hãng</title>
+  <meta name="description" content="Bảo hiểm Thông Minh: So sánh & mua bảo hiểm đa hãng (ô tô, sức khỏe, tài sản, du lịch, doanh nghiệp). Báo giá nhanh, hợp đồng điện tử, bồi thường minh bạch.">
+  <meta property="og:title" content="Bảo hiểm Thông Minh — Báo giá trong 60 giây">
+  <meta property="og:description" content="Funnel tối ưu chuyển đổi. Chat Zalo/Gọi ngay. Chạy quảng cáo đa kênh.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#2563eb">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%232563eb' d='M12 1l10 7-10 15L2 8z'/%3E%3C/svg%3E">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: { colors: { primary: { DEFAULT: '#2563eb' }}}}};
+  </script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- GA4: thay G-XXXXXXXXXX bằng Measurement ID của bạn -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX', { 'anonymize_ip': true });
+  </script>
+
+  <style>
+    .fade-in{animation:fadein .5s ease-out both}
+    @keyframes fadein{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+    .badge{font-size:11px;padding:4px 8px;border-radius:9999px;background:rgba(37,99,235,.1);color:#2563eb}
+    .dock{position:fixed;right:16px;bottom:16px;z-index:60;display:flex;flex-direction:column;gap:.5rem}
+    .dock a{display:flex;align-items:center;gap:.5rem;background:#fff;border:1px solid rgba(15,23,42,.1);padding:.6rem .75rem;border-radius:9999px;box-shadow:0 6px 20px rgba(2,6,23,.08)}
+    .dock a:hover{transform:translateY(-1px)}
+    .pulse{position:absolute;inset:-6px;border-radius:9999px;border:2px solid rgba(37,99,235,.35);animation:pulse 1.6s infinite}
+    @keyframes pulse {0%{opacity:.7;transform:scale(.9)} 70%{opacity:0;transform:scale(1.2)} 100%{opacity:0;transform:scale(1.35)}}
+    .step-btn[aria-current="true"]{background:#2563eb;color:#fff;border-color:#2563eb}
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900">
+  <header class="sticky top-0 z-40 backdrop-blur supports-[backdrop-filter]:bg-white/70 bg-white/60 border-b">
+    <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-semibold">
+        <i data-lucide="shield-check" class="w-6 h-6"></i>
+        <span>Bảo hiểm Thông Minh</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#funnel" class="hover:text-primary">Báo giá nhanh</a>
+        <a href="#san-pham" class="hover:text-primary">Sản phẩm</a>
+        <a href="#doi-tac" class="hover:text-primary">Đối tác</a>
+        <a href="#faq" class="hover:text-primary">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-2">
+        <a id="cta-call-top" href="tel:+84946665968" class="hidden sm:inline-flex items-center gap-2 border rounded-md px-3 py-2 text-sm hover:bg-white">
+          <i data-lucide="phone" class="w-4 h-4"></i> <span>094 666 5968</span>
+        </a>
+        <a id="cta-zalo-top" href="https://zalo.me/0946665968" target="_blank" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-white text-sm hover:opacity-90">
+          <i data-lucide="message-square" class="w-4 h-4"></i><span>Chat Zalo</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <section class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10">
+      <div class="absolute -top-20 -right-10 h-72 w-72 rounded-full bg-gradient-to-br from-indigo-200 to-purple-200 blur-3xl opacity-60"></div>
+      <div class="absolute -bottom-16 -left-10 h-72 w-72 rounded-full bg-gradient-to-br from-cyan-200 to-teal-200 blur-3xl opacity-60"></div>
+    </div>
+    <div class="max-w-7xl mx-auto px-4 py-14 md:py-24 grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-in">
+        <div class="inline-flex items-center gap-2 text-xs font-medium px-3 py-1 rounded-full border bg-white/70 mb-5">
+          <i data-lucide="sparkles" class="w-4 h-4"></i>
+          So sánh & mua bảo hiểm đa hãng — tối ưu quyền lợi & chi phí
+        </div>
+        <h1 class="text-3xl md:text-5xl font-bold tracking-tight leading-tight">
+          Báo giá phù hợp trong <span class="text-primary">60 giây</span>
+        </h1>
+        <p class="mt-4 text-base md:text-lg text-slate-600 max-w-xl">
+          Chọn nhu cầu → nhận 3–5 phương án từ nhiều nhà bảo hiểm (MIC, PVI, Bảo Việt, PTI, PJICO…). Hỗ trợ 1:1, hợp đồng điện tử, bồi thường minh bạch.
+        </p>
+        <div class="mt-6 flex flex-wrap gap-3">
+          <a id="hero-zalo" href="https://zalo.me/0946665968" target="_blank" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-white text-sm hover:opacity-90 relative">
+            <span class="pulse" aria-hidden="true"></span>
+            <i data-lucide="message-square" class="w-4 h-4"></i> Chat Zalo ngay
+          </a>
+          <a id="hero-call" href="tel:+84946665968" class="inline-flex items-center gap-2 border rounded-md px-4 py-2 text-sm hover:bg-white">
+            <i data-lucide="phone" class="w-4 h-4"></i> Gọi 094 666 5968
+          </a>
+        </div>
+        <div class="mt-6 grid grid-cols-3 gap-4 text-sm">
+          <div class="rounded-xl border bg-white p-3 text-center"><div class="font-semibold text-lg">50.000+</div><div class="text-slate-500">khách tin dùng</div></div>
+          <div class="rounded-xl border bg-white p-3 text-center"><div class="font-semibold text-lg">24–72h</div><div class="text-slate-500">giải quyết bồi thường</div></div>
+          <div class="rounded-xl border bg-white p-3 text-center"><div class="font-semibold text-lg">100%</div><div class="text-slate-500">hợp đồng điện tử</div></div>
+        </div>
+      </div>
+
+      <!-- Funnel 3 bước -->
+      <div id="funnel" class="fade-in">
+        <div class="shadow-xl border border-slate-200/70 rounded-2xl bg-white">
+          <div class="p-6 border-b">
+            <h3 class="text-lg font-semibold flex items-center gap-2">
+              <i data-lucide="sliders" class="w-5 h-5"></i> Báo giá đa hãng (3 bước)
+            </h3>
+          </div>
+          <div class="p-6">
+            <div class="flex gap-2 mb-4 text-xs">
+              <button class="step-btn border rounded-md px-3 py-1" data-step="1" aria-current="true">1. Nhu cầu</button>
+              <button class="step-btn border rounded-md px-3 py-1" data-step="2">2. Ngân sách</button>
+              <button class="step-btn border rounded-md px-3 py-1" data-step="3">3. Liên hệ</button>
+            </div>
+
+            <!-- step 1 -->
+            <div class="step" id="step-1">
+              <label class="text-sm font-medium">Bạn muốn mua loại bảo hiểm nào?</label>
+              <div class="grid grid-cols-2 gap-2 mt-2 text-sm">
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="Xe cơ giới" checked> Xe cơ giới</label>
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="Sức khỏe"> Sức khỏe</label>
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="Tài sản & Cháy nổ"> Tài sản & Cháy nổ</label>
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="Du lịch"> Du lịch</label>
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="Doanh nghiệp"> Doanh nghiệp</label>
+                <label class="border rounded-md p-3 flex items-center gap-2 cursor-pointer"><input type="radio" name="kind" value="TNDS bắt buộc"> TNDS bắt buộc</label>
+              </div>
+
+              <label class="text-sm font-medium block mt-4">Ưu tiên nhà bảo hiểm</label>
+              <select id="insurer" class="mt-2 w-full h-10 rounded-md border px-3 text-sm">
+                <option value="Tự động đề xuất" selected>Tự động đề xuất (khuyên dùng)</option>
+                <option>MIC</option><option>PVI</option><option>Bảo Việt</option><option>PTI</option><option>PJICO</option><option>VBI</option>
+              </select>
+
+              <div class="mt-4 flex justify-end">
+                <button class="next border rounded-md px-4 py-2 text-sm">Tiếp tục</button>
+              </div>
+            </div>
+
+            <!-- step 2 -->
+            <div class="step hidden" id="step-2">
+              <label class="text-sm font-medium">Ngân sách dự kiến (VND/năm)</label>
+              <input id="budget" placeholder="vd: 3.000.000" class="mt-2 w-full h-10 rounded-md border px-3 text-sm"/>
+
+              <label class="text-sm font-medium block mt-4">Ghi chú (tuổi xe/đời xe, số người, tài sản...)</label>
+              <textarea id="note" rows="3" placeholder="Ví dụ: xe 5 chỗ, đời 2021; bảo hiểm nhà phố 2 tầng; gói sức khỏe gia đình 3 người..." class="mt-2 w-full rounded-md border px-3 py-2 text-sm"></textarea>
+
+              <div class="mt-4 flex justify-between">
+                <button class="prev border rounded-md px-4 py-2 text-sm">Quay lại</button>
+                <button class="next border rounded-md px-4 py-2 text-sm">Tiếp tục</button>
+              </div>
+            </div>
+
+            <!-- step 3 -->
+            <div class="step hidden" id="step-3">
+              <div class="grid md:grid-cols-2 gap-3">
+                <div>
+                  <label class="text-sm font-medium">Họ & tên</label>
+                  <input id="name" class="mt-2 w-full h-10 rounded-md border px-3 text-sm" placeholder="Nguyễn Văn A" required>
+                </div>
+                <div>
+                  <label class="text-sm font-medium">Số điện thoại</label>
+                  <input id="phone" class="mt-2 w-full h-10 rounded-md border px-3 text-sm" placeholder="090x xxx xxx" required>
+                </div>
+              </div>
+
+              <div class="mt-4 flex flex-wrap gap-2">
+                <button id="submit-zalo" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-white text-sm hover:opacity-90">
+                  <i data-lucide="message-square" class="w-4 h-4"></i> Gửi qua Zalo
+                </button>
+                <a id="submit-call" href="tel:+84946665968" class="inline-flex items-center gap-2 border rounded-md px-4 py-2 text-sm hover:bg-white">
+                  <i data-lucide="phone" class="w-4 h-4"></i> Gọi tư vấn
+                </a>
+                <button id="submit-netlify" class="inline-flex items-center gap-2 border rounded-md px-4 py-2 text-sm hover:bg-white">
+                  <i data-lucide="send" class="w-4 h-4"></i> Gửi form (Netlify + Google Sheets)
+                </button>
+              </div>
+
+              <p class="text-xs text-slate-500 mt-3">
+                *Zalo mở chat với chuyên viên. Tin nhắn tóm tắt yêu cầu tự động <b>sao chép</b>; dán vào khung chat là xong.
+              </p>
+            </div>
+
+            <!-- Netlify form (ẩn) -->
+            <form name="lead" data-netlify="true" netlify-honeypot="bot-field" hidden>
+              <input type="text" name="Họ tên">
+              <input type="text" name="Điện thoại">
+              <input type="text" name="Loại bảo hiểm">
+              <input type="text" name="Ưu tiên hãng">
+              <input type="text" name="Ngân sách">
+              <textarea name="Ghi chú"></textarea>
+              <input type="text" name="utm_source">
+              <input type="text" name="utm_medium">
+              <input type="text" name="utm_campaign">
+              <input type="text" name="utm_content">
+              <input type="text" name="utm_term">
+              <input type="text" name="gclid">
+              <input type="text" name="fbclid">
+              <input type="text" name="page_url">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="san-pham" class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+    <div class="max-w-2xl mb-8">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Sản phẩm nổi bật</h2>
+      <p class="text-slate-600 mt-2">Xe cơ giới • Sức khỏe • Tài sản & Cháy nổ • Du lịch • Doanh nghiệp • TNDS bắt buộc</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-6">
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="car" class="w-5 h-5"></i> Xe cơ giới</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> TNDS bắt buộc/tự nguyện</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Vật chất xe, thủy kích</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Cứu hộ 24/7</li></ul></div>
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="heart-pulse" class="w-5 h-5"></i> Sức khỏe</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Nằm viện/phẫu thuật</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Bảo lãnh viện phí</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Gói cá nhân/gia đình/Doanh nghiệp</li></ul></div>
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="fire-extinguisher" class="w-5 h-5"></i> Tài sản & Cháy nổ</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Nhà ở, kho xưởng</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Cháy nổ bắt buộc, thiên tai</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Gián đoạn kinh doanh</li></ul></div>
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="plane" class="w-5 h-5"></i> Du lịch</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Trong nước & quốc tế</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Hỗ trợ y tế khẩn cấp</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Xin visa thuận lợi</li></ul></div>
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="building-2" class="w-5 h-5"></i> Doanh nghiệp</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> TNDS doanh nghiệp</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Hàng hóa vận chuyển</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> An ninh mạng & nghề nghiệp</li></ul></div>
+      <div class="rounded-2xl border bg-white p-6"><h3 class="text-lg font-semibold flex items-center gap-2"><i data-lucide="landmark" class="w-5 h-5"></i> TNDS bắt buộc</h3><ul class="mt-3 space-y-2 text-sm"><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Ô tô/xe máy, cấp e-Policy</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Thanh toán online</li><li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Xuất hoá đơn điện tử</li></ul></div>
+    </div>
+  </section>
+
+  <section id="doi-tac" class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+    <div class="rounded-2xl border bg-white p-6 md:p-10">
+      <div class="badge mb-2">Đối tác bảo hiểm</div>
+      <h3 class="text-2xl font-semibold">Hợp tác nhiều nhà bảo hiểm để tối ưu quyền lợi</h3>
+      <p class="text-sm text-slate-600 mt-2">Ví dụ: MIC, PVI, Bảo Việt, PTI, PJICO, VBI… (thay bằng logo khi có quyền sử dụng thương hiệu).</p>
+      <div class="mt-4 grid grid-cols-2 md:grid-cols-6 gap-3 text-sm text-center">
+        <div class="border rounded-xl p-3">MIC</div>
+        <div class="border rounded-xl p-3">PVI</div>
+        <div class="border rounded-xl p-3">Bảo Việt</div>
+        <div class="border rounded-xl p-3">PTI</div>
+        <div class="border rounded-xl p-3">PJICO</div>
+        <div class="border rounded-xl p-3">VBI</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+    <div class="max-w-2xl mb-6">
+      <h2 class="text-2xl md:text-3xl font-bold tracking-tight">Câu hỏi thường gặp</h2>
+      <p class="text-slate-600 mt-2">Không thấy câu trả lời? Gọi <a class="underline" href="tel:+84946665968">094 666 5968</a> hoặc nhắn Zalo.</p>
+    </div>
+    <div class="max-w-3xl">
+      <details class="border-b py-4" open>
+        <summary class="cursor-pointer text-left font-medium">Báo giá đa hãng diễn ra như thế nào?</summary>
+        <p class="mt-2 text-slate-600">Chọn nhu cầu & ngân sách, hệ thống tổng hợp phương án phù hợp từ nhiều nhà bảo hiểm để bạn so sánh minh bạch về quyền lợi – phí – loại trừ.</p>
+      </details>
+      <details class="border-b py-4">
+        <summary class="cursor-pointer text-left font-medium">Tôi có nhận hợp đồng điện tử không?</summary>
+        <p class="mt-2 text-slate-600">Có. e-Policy gửi qua email/Zalo ngay sau thanh toán (bản cứng nếu cần sẽ chuyển phát sau).</p>
+      </details>
+      <details class="border-b py-4">
+        <summary class="cursor-pointer text-left font-medium">Có hỗ trợ bồi thường không?</summary>
+        <p class="mt-2 text-slate-600">Có. Hỗ trợ chuẩn bị hồ sơ, hướng dẫn quy trình và theo dõi tiến độ; thời gian giải quyết điển hình 24–72h tuỳ hồ sơ.</p>
+      </details>
+      <details class="border-b py-4">
+        <summary class="cursor-pointer text-left font-medium">Có xuất hoá đơn GTGT?</summary>
+        <p class="mt-2 text-slate-600">Có. Để lại thông tin doanh nghiệp trong funnel hoặc trao đổi qua Zalo/hotline.</p>
+      </details>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-4 pb-16">
+    <div class="rounded-2xl bg-gradient-to-br from-primary/10 to-emerald-50 p-8 md:p-12 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <h3 class="text-xl md:text-2xl font-semibold">Sẵn sàng được bảo vệ tốt hơn?</h3>
+        <p class="text-sm text-slate-600 mt-1">Để lại thông tin – chuyên viên sẽ gọi tư vấn trong 5–15 phút (giờ HC).</p>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://zalo.me/0946665968" target="_blank" class="inline-flex items-center gap-2 rounded-md bg-primary px-4 py-2 text-white text-sm hover:opacity-90">
+          <i data-lucide="message-square" class="w-4 h-4"></i> Chat Zalo
+        </a>
+        <a href="tel:+84946665968" class="inline-flex items-center gap-2 border rounded-md px-4 py-2 text-sm hover:bg-white">
+          <i data-lucide="phone" class="w-4 h-4"></i> Gọi 094 666 5968
+        </a>
+      </div>
+    </div>
+    <p class="mt-4 text-xs text-slate-500">*Thông tin/quyền lợi mang tính tham khảo; điều khoản cụ thể theo từng nhà bảo hiểm & pháp luật hiện hành.</p>
+  </section>
+
+  <footer class="border-t bg-white">
+    <div class="max-w-7xl mx-auto px-4 py-8 grid md:grid-cols-4 gap-6 text-sm">
+      <div>
+        <div class="flex items-center gap-2 font-semibold"><i data-lucide="shield-check" class="w-5 h-5"></i> Bảo hiểm Thông Minh</div>
+        <p class="mt-2 text-slate-600">Giải pháp bảo hiểm số – minh bạch, nhanh chóng, đồng hành khi cần.</p>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Liên hệ</div>
+        <ul class="space-y-1 text-slate-600">
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4"></i> <a href="tel:+84946665968">094 666 5968</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="message-square" class="w-4 h-4"></i> <a href="https://zalo.me/0946665968" target="_blank">Zalo: 094 666 5968</a></li>
+          <li class="flex items-center gap-2"><i data-lucide="mail" class="w-4 h-4"></i> support@baohiem.vn</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Sản phẩm</div>
+        <ul class="space-y-1 text-slate-600">
+          <li>Xe cơ giới</li><li>Sức khỏe</li><li>Tài sản & Cháy nổ</li><li>Du lịch</li><li>Doanh nghiệp</li><li>TNDS bắt buộc</li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold mb-2">Pháp lý</div>
+        <ul class="space-y-1 text-slate-600">
+          <li>Điều khoản sử dụng</li><li>Chính sách quyền riêng tư</li><li>Chính sách bồi thường</li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t py-4 text-center text-xs text-slate-500">© <span id="year"></span> BaoHiem Smart. All rights reserved.</div>
+  </footer>
+
+  <!-- CTA nổi: Zalo/Call -->
+  <div class="dock">
+    <a id="dock-zalo" href="https://zalo.me/0946665968" target="_blank" aria-label="Chat Zalo">
+      <i data-lucide="message-square" class="w-4 h-4"></i> Zalo
+    </a>
+    <a id="dock-call" href="tel:+84946665968" aria-label="Gọi điện">
+      <i data-lucide="phone" class="w-4 h-4"></i> Gọi
+    </a>
+  </div>
+
+  <script>
+    // ======= THAY ĐỔI TẠI ĐÂY (theo thông tin của bạn) =======
+    const PHONE_DISPLAY = "094 666 5968";
+    const PHONE_TEL = "+84946665968";
+    const ZALO_LINK = "https://zalo.me/0946665968"; // nếu có OA ID, thay bằng link OA
+
+    // Google Sheets Apps Script endpoint (đặt sau khi bạn triển khai Apps Script)
+    // Ví dụ: https://script.google.com/macros/s/DEPLOYMENT_ID/exec
+    const GS_ENDPOINT = ""; // để trống thì tự động bỏ qua gửi về Sheets
+
+    // ======= Khởi tạo icon & năm =======
+    window.addEventListener('DOMContentLoaded', () => {
+      window.lucide && window.lucide.createIcons && window.lucide.createIcons();
+      document.getElementById('year').textContent = new Date().getFullYear();
+    });
+
+    // ======= UTM capture (kèm gclid/fbclid) =======
+    (function captureUTM(){
+      const params = new URLSearchParams(window.location.search);
+      const keys = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","gclid","fbclid"];
+      const utm = {}; keys.forEach(k=>{ if(params.get(k)){ localStorage.setItem(k, params.get(k)); utm[k]=params.get(k); }});
+      // GA4 event
+      if(Object.keys(utm).length){ gtag('event','utm_captured', utm); }
+    })();
+
+    function getUTM(){
+      const keys = ["utm_source","utm_medium","utm_campaign","utm_content","utm_term","gclid","fbclid"];
+      const obj = {}; keys.forEach(k=>{ const v = localStorage.getItem(k); if(v) obj[k]=v; });
+      obj.page_url = location.href;
+      return obj;
+    }
+
+    // ======= Funnel logic =======
+    const steps = [...document.querySelectorAll('.step')];
+    const stepBtns = [...document.querySelectorAll('.step-btn')];
+    let current = 0;
+    function updateStep(idx){ current=idx; steps.forEach((s,i)=>s.classList.toggle('hidden', i!==idx)); stepBtns.forEach((b,i)=>b.setAttribute('aria-current', String(i===idx))); }
+    document.querySelectorAll('.next').forEach(btn=>btn.addEventListener('click',()=>updateStep(Math.min(steps.length-1,current+1))));
+    document.querySelectorAll('.prev').forEach(btn=>btn.addEventListener('click',()=>updateStep(Math.max(0,current-1))));
+    stepBtns.forEach((b,i)=>b.addEventListener('click',()=>updateStep(i)));
+    updateStep(0);
+
+    // ======= Helpers =======
+    function buildSummary(){
+      const kind = document.querySelector('input[name="kind"]:checked')?.value || "Chưa chọn";
+      const insurer = document.getElementById('insurer').value;
+      const budget = document.getElementById('budget').value || "(chưa ghi)";
+      const note = document.getElementById('note').value || "(không)";
+      const name = document.getElementById('name').value || "(chưa cung cấp)";
+      const phone = document.getElementById('phone').value || "(chưa cung cấp)";
+      const utm = getUTM();
+      const utmStr = Object.keys(utm).length ? "\nUTM: " + JSON.stringify(utm) : "";
+      return { text:`YÊU CẦU BÁO GIÁ\n- Khách: ${name}\n- SĐT: ${phone}\n- Loại: ${kind}\n- Ưu tiên hãng: ${insurer}\n- Ngân sách: ${budget}\n- Ghi chú: ${note}${utmStr}`,
+               data:{name, phone, kind, insurer, budget, note, ...utm} };
+    }
+    function copyToClipboard(text){ try { navigator.clipboard.writeText(text); } catch(e){} }
+
+    // ======= Gửi qua Zalo =======
+    document.getElementById('submit-zalo').addEventListener('click', () => {
+      const {text, data} = buildSummary();
+      copyToClipboard(text);
+      gtag('event','generate_lead', { method:'zalo' });
+      alert("Đã sao chép yêu cầu. Bấm OK để mở Zalo và dán vào khung chat.");
+      window.open(ZALO_LINK, "_blank");
+    });
+
+    // ======= Gửi Form (Netlify + Google Sheets nếu có GS_ENDPOINT) =======
+    document.getElementById('submit-netlify').addEventListener('click', async () => {
+      const {data} = buildSummary();
+      // Netlify Forms
+      const f = document.forms['lead'];
+      if(f){
+        f.elements['Họ tên'].value = data.name || '';
+        f.elements['Điện thoại'].value = data.phone || '';
+        f.elements['Loại bảo hiểm'].value = data.kind || '';
+        f.elements['Ưu tiên hãng'].value = data.insurer || '';
+        f.elements['Ngân sách'].value = data.budget || '';
+        f.elements['Ghi chú'].value = data.note || '';
+        f.elements['utm_source'].value = data.utm_source || '';
+        f.elements['utm_medium'].value = data.utm_medium || '';
+        f.elements['utm_campaign'].value = data.utm_campaign || '';
+        f.elements['utm_content'].value = data.utm_content || '';
+        f.elements['utm_term'].value = data.utm_term || '';
+        f.elements['gclid'].value = data.gclid || '';
+        f.elements['fbclid'].value = data.fbclid || '';
+        f.elements['page_url'].value = data.page_url || location.href;
+        const formData = new FormData(f);
+        fetch("/", { method:"POST", body: formData }).catch(()=>{}); // fire-and-forget
+      }
+      // Google Sheets (Apps Script)
+      if(GS_ENDPOINT){
+        try{
+          await fetch(GS_ENDPOINT, { method:'POST', mode:'no-cors', headers:{'Content-Type':'application/json'}, body: JSON.stringify({
+            timestamp: new Date().toISOString(),
+            source: 'BaoHiem-ThongMinh',
+            ...data
+          })});
+        }catch(e){}
+      }
+      gtag('event','generate_lead', { method:'form' });
+      alert('Đã gửi yêu cầu! Chúng tôi sẽ liên hệ trong ít phút (giờ HC).');
+    });
+
+    // ======= Track click CTA =======
+    document.getElementById('hero-call').addEventListener('click', ()=> gtag('event','click', {cta:'call_hero'}));
+    document.getElementById('hero-zalo').addEventListener('click', ()=> gtag('event','click', {cta:'zalo_hero'}));
+    document.getElementById('cta-call-top').addEventListener('click', ()=> gtag('event','click', {cta:'call_top'}));
+    document.getElementById('cta-zalo-top').addEventListener('click', ()=> gtag('event','click', {cta:'zalo_top'}));
+  </script>
+</body>
+</html>
